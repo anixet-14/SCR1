@@ -5,9 +5,10 @@ A full-stack dashboard application empowering interns to manage and track their 
 ---
 
 ## 📸 Preview
-
+### 🔗 Login
+![Referrals](./screenshots/login.png)
 ### 🏠 Dashboard  
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./screenshots/dashboard1.png)(./screenshots/dashboard2.png)(./screenshots/dashboard3.png)(./screenshots/dashboard4.png)(./screenshots/dashboard5.png)
 
 ### 🏆 Leaderboard  
 ![Leaderboard](./screenshots/leaderboard.png)
@@ -18,8 +19,6 @@ A full-stack dashboard application empowering interns to manage and track their 
 ### 👤 Profile Management  
 ![Profile](./screenshots/profile.png)
 
-### 🔗 Referrals  
-![Referrals](./screenshots/referrals.png)
 
 ---
 
