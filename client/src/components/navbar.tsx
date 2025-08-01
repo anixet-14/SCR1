@@ -1,7 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, LogOut } from "lucide-react";
+import { Menu, LogOut, Github } from "lucide-react";
 import { useState } from "react";
 import { useAuth } from "@/contexts/AuthContext";
 import logoPath from "@assets/shecan-logo_1754017822834.png";
@@ -49,6 +49,15 @@ export default function Navbar() {
               </Link>
             ))}
             <Button 
+              variant="ghost"
+              size="icon"
+              onClick={() => window.open('https://github.com/anixet-14/SCR1', '_blank')}
+              className="text-white hover:text-foundation-orange hover:bg-foundation-orange/10 transition-colors duration-200"
+              title="View Source Code"
+            >
+              <Github className="h-5 w-5" />
+            </Button>
+            <Button 
               onClick={logout}
               className="bg-foundation-orange text-white hover:bg-orange-600 transition-colors duration-200 font-medium"
             >
@@ -79,6 +88,17 @@ export default function Navbar() {
                       </button>
                     </Link>
                   ))}
+                  <Button 
+                    variant="ghost"
+                    onClick={() => {
+                      window.open('https://github.com/anixet-14/SCR1', '_blank');
+                      setIsOpen(false);
+                    }}
+                    className="justify-start text-white hover:text-foundation-orange hover:bg-foundation-orange/10 transition-colors duration-200 font-medium"
+                  >
+                    <Github className="mr-2 h-4 w-4" />
+                    View Source Code
+                  </Button>
                   <Button 
                     onClick={logout}
                     className="bg-foundation-orange text-white hover:bg-orange-600 transition-colors duration-200 font-medium mt-4"
