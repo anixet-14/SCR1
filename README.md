@@ -17,9 +17,6 @@ A full-stack dashboard application empowering interns to manage and track their 
 ### 🏆 Leaderboard  
 ![Leaderboard](./screenshots/leaderboard.png)
 
-### 🥇 Achievements  
-![Achievements](./screenshots/achievements.png)
-
 ### 👤 Profile Management  
 ![Profile](./screenshots/profile.png)
 
