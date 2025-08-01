@@ -1,41 +1,56 @@
-# She Can Foundation Intern Fundraising Dashboard
+# 🌸 She Can Foundation — Round 1 Assignment
 
-## Overview
+A full-stack dashboard application empowering interns to manage and track their fundraising activities for the **She Can Foundation**. Designed with accessibility, clarity, and growth in mind, the platform supports interns with live progress updates, achievement tracking, leaderboards, and personal management tools.
 
-This is a full-stack web application designed for the She Can Foundation's intern fundraising program. The platform enables interns to track their fundraising progress, manage referrals, view leaderboards, and monitor their achievements in a comprehensive dashboard interface. The application focuses on empowering women through technology while providing tools for effective fundraising campaign management.
+---
 
-## Recent Changes
+## 📸 Preview
 
-**January 31, 2025** - Project Completed
-- Built complete intern fundraising portal with full authentication system
-- Implemented dashboard with stats cards, referral sharing, progress tracking
-- Created leaderboard with top performers and full rankings table
-- Added achievement/rewards system with badge progression
-- Designed comprehensive profile management system
-- Applied She Can Foundation branding with orange/navy theme
-- Integrated foundation logo throughout the application
-- Fixed checkbox functionality in forms
-- Successfully meets all Round 1 Task requirements with dummy data and REST API
+### 🏠 Dashboard  
+![Dashboard](./screenshots/dashboard.png)
 
-## User Preferences
+### 🏆 Leaderboard  
+![Leaderboard](./screenshots/leaderboard.png)
 
-Preferred communication style: Simple, everyday language.
+### 🥇 Achievements  
+![Achievements](./screenshots/achievements.png)
 
-## System Architecture
+### 👤 Profile Management  
+![Profile](./screenshots/profile.png)
 
-### Frontend Architecture
-- **Framework**: React 18 with TypeScript for type safety and modern component patterns
-- **Routing**: Wouter for lightweight client-side routing
-- **State Management**: React Context API for authentication state and TanStack Query for server state management
-- **UI Framework**: Shadcn/ui components built on Radix UI primitives with Tailwind CSS for styling
-- **Build Tool**: Vite for fast development and optimized production builds
+### 🔗 Referrals  
+![Referrals](./screenshots/referrals.png)
 
-### Backend Architecture
-- **Runtime**: Node.js with Express.js framework for REST API endpoints
-- **Language**: TypeScript for end-to-end type safety
-- **API Design**: RESTful endpoints for interns, activities, and achievements
-- **Data Storage**: In-memory storage with interface abstraction for easy database migration
-- **Authentication**: Simple email-based authentication (suitable for intern program scope)
+---
+
+## ✨ Recent Highlights
+
+- ✅ Full dashboard with intern stats, charts, and activities  
+- 🔗 Real-time referral tracking and leaderboard rankings  
+- 🏅 Achievements system with badges and gamification  
+- 👤 Profile management with edit & view features  
+- 🎨 Fully branded UI with She Can Foundation theme  
+- ✅ REST API with dummy data and authentication  
+- 🧪 Meets all Round 1 Task requirements  
+
+---
+
+## 🏗️ Architecture Overview
+
+### 🖼️ Frontend
+- **React 18 + TypeScript**
+- **Routing**: Wouter
+- **State**: Context API + TanStack Query
+- **UI**: Tailwind CSS + Shadcn/UI
+- **Build Tool**: Vite
+
+### 🔧 Backend
+- **Node.js + Express (TypeScript)**
+- **REST APIs** for interns, activities, achievements
+- **Auth**: Email-based login
+- **Data**: Drizzle ORM + Neon PostgreSQL
+
+---
 
 ### Database Design
 - **ORM**: Drizzle ORM with PostgreSQL dialect for type-safe database operations
