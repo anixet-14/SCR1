@@ -58,7 +58,13 @@ export default function Login() {
             />
           </div>
           <CardTitle className="text-3xl font-bold text-foundation-navy">Welcome Back</CardTitle>
-          <CardDescription>Empowering change, one step at a time</CardDescription>
+          <CardDescription>
+            Empowering change, one step at a time
+            <br />
+            <span className="text-xs text-gray-500 mt-2 block">
+              Try: sarah.johnson@shecanfoundation.org (any password)
+            </span>
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleLogin} className="space-y-6">
@@ -93,10 +99,10 @@ export default function Login() {
                 <Checkbox 
                   id="remember" 
                   checked={rememberMe}
-                  onCheckedChange={setRememberMe}
+                  onCheckedChange={(checked) => setRememberMe(checked === true)}
                   className="border-foundation-orange data-[state=checked]:bg-foundation-orange"
                 />
-                <Label htmlFor="remember" className="text-sm">Remember me</Label>
+                <Label htmlFor="remember" className="text-sm cursor-pointer">Remember me</Label>
               </div>
               <Link href="#" className="text-sm text-foundation-orange hover:text-orange-600">
                 Forgot password?

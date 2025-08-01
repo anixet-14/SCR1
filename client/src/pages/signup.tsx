@@ -164,22 +164,30 @@ export default function Signup() {
               />
             </div>
             
-            <div className="flex items-center space-x-2">
+            <div className="flex items-start space-x-2">
               <Checkbox 
                 id="terms" 
                 checked={agreeToTerms}
-                onCheckedChange={setAgreeToTerms}
-                className="border-foundation-orange data-[state=checked]:bg-foundation-orange"
+                onCheckedChange={(checked) => setAgreeToTerms(checked === true)}
+                className="border-foundation-orange data-[state=checked]:bg-foundation-orange mt-1"
               />
-              <Label htmlFor="terms" className="text-sm">
+              <Label htmlFor="terms" className="text-sm leading-5 cursor-pointer">
                 I agree to the{" "}
-                <Link href="#" className="text-foundation-orange hover:text-orange-600">
+                <button 
+                  type="button"
+                  className="text-foundation-orange hover:text-orange-600 underline"
+                  onClick={(e) => e.preventDefault()}
+                >
                   Terms of Service
-                </Link>{" "}
+                </button>{" "}
                 and{" "}
-                <Link href="#" className="text-foundation-orange hover:text-orange-600">
+                <button 
+                  type="button"
+                  className="text-foundation-orange hover:text-orange-600 underline"
+                  onClick={(e) => e.preventDefault()}
+                >
                   Privacy Policy
-                </Link>
+                </button>
               </Label>
             </div>
             
